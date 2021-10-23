@@ -5,10 +5,12 @@ Python timed input prompt that works for both windows and linux
 ```python
   input_with_timeout(prompt, timeout, default)
 ```
-  where:
-    prompt:   the input prompt string
-    timeout:  time to wait for response, in seconds
-    default:  optional default return value
+where:
+variable | description
+-------- | ----------------------------------------
+prompt | the input prompt string
+timeout | time to wait for response, in seconds
+default | optional default return value
     
  If no default is specfied, and timeout occurs, None will be returned.
 
