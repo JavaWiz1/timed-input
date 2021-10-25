@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: timed-input
+Version: 0.0.1
+Summary: A timed input cli helper project for windows and *nix
+Home-page: https://github.com/JavaWiz1/timed-input
+Author: JavaWiz1
+Author-email: JavaWiz1@hotmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/JavaWiz1/timed-input/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# timed-input
+Python timed input prompt that works for both windows and linux
+
+# Syntax
+```python
+  input_with_timeout(prompt: str, timeout: int, default: str)
+```
+where:
+variable | description
+-------- | ----------------------------------------
+prompt | the input prompt string
+timeout | time to wait for response, in seconds
+default | optional default return value
+    
+If no default is specfied, and timeout occurs, None will be returned.
+
+# Example:
+```python
+response = input_with_timeout("Continue (y|n): ", 10, "n")
+if response in "Nn":
+  print("Process aborted.")
+  return
+  
+print("Let's condinue with the process...")
+```   
+
+

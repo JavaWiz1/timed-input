@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/timed_input.egg-info/PKG-INFO
+src/timed_input.egg-info/SOURCES.txt
+src/timed_input.egg-info/dependency_links.txt
+src/timed_input.egg-info/top_level.txt
